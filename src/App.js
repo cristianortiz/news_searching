@@ -16,7 +16,7 @@ function App() {
   if category state changes to another, the API is requested again to update search results */
   useEffect(() => {
     const requestAPI = async () => {
-      const apiKey = "110369a631174a6998121d7c6bed2227";
+      const apiKey = "your apikey";
       const url = `https://newsapi.org/v2/top-headlines?country=us&category=${category}&apiKey=${apiKey}`;
 
       const response = await axios.get(url);
