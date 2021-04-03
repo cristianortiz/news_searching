@@ -1,6 +1,6 @@
 # Small News By Category website in react
 
-### this simple app connects whit and external API to retrieve news form several sources bu category whit title, image descriptio url , an other data
+### This simple app connects whit and external API to retrieve news form several sources by category
 
 ### Highlights
 
