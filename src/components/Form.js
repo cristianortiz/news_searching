@@ -1,6 +1,7 @@
 import React from "react";
 import useSelect from "../hooks/useSelect";
 import styles from "./Form.module.css";
+import PropTypes from "prop-types";
 
 const Form = ({ handleCategory }) => {
   //array to set custon hook initial state of select inputs data
@@ -41,6 +42,10 @@ const Form = ({ handleCategory }) => {
       </div>
     </div>
   );
+};
+
+Form.propTypes = {
+  handleCategory: PropTypes.func.isRequired,
 };
 
 export default Form;

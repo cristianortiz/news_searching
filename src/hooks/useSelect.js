@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import PropTypes from "prop-types";
 
 const useSelect = (initialState, options) => {
   //custom hook state, this intial state value come from Form component
@@ -21,4 +22,7 @@ const useSelect = (initialState, options) => {
   return [state, SelectNews];
 };
 
+useSelect.PropTypes = {
+  initialState: PropTypes.object.isRequired,
+};
 export default useSelect;
